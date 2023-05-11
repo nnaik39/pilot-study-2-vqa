@@ -176,38 +176,22 @@
             <strong>Excerpt of the article the image occurred in:</strong> {{{ context }}}
             </p>
             {{/ context }} -->
-            {{# critical_text }}
+            {{# q2 }}
             <p class="critical_text">
-            {{{ critical_text }}}
+            {{{ q2 }}}
             </p>
-            {{/ critical_text }}
+            {{/ q2 }}
 
             <div class="picture">
-                    <p class="bordered-text"> Image Description: {{{ description }}} </p>
+                    <img src={{ picture }} alt="a picture" height="300">
             </div>
             <br>
             <hr>
             <br>
-            <div class="questions" id="questions">
-                {{# q1 }}
-                <p class="question">{{{ q1 }}}</p>
-                {{/ q1 }}
-
-                <p id="slider1_box" class="answer-container blend-out">
-                    <textarea class="context-survey-question" id="context-justification"/>
-                </p>
-                    <br>
-                </p>
-
-                <br> 
-                
-                {{# q2 }}
-                <p class="question">{{{ q2 }}} </p>
-                {{/ q2 }}
+            <div class="questions" id="questions">                
                  <div class="popup">
                     <span class="popuptext" id="myPopup">Think of questions that will help you imagine the image and why it appears on the website. Please ensure your questions are more than 3 words.</span>
                 </div>
-                <button id="hint"> Hint </button>
 
                 <p id="slider2_box" class="answer-container blend-out">
                     <textarea class="image-question" id="question-1"/>
@@ -216,15 +200,6 @@
                 </p>
             </div>
 
-            <br> <br>
-            <p class="answer-container multchoice" style="text-align: center; color: black;">
-                {{# checkbox }}
-                <br>
-                <input type="checkbox" id="checkbox" name="checkbox"><label for="checkbox">{{{ checkbox }}}</label>
-                {{/ checkbox }}
-            </p>
-            
-            <br>
             <!-- 
             <p class="question">Q3: Is the bold text <strong>human generated or computer generated</strong>?</p>
             <p class="answer-container multchoice" style="text-align: left;">
@@ -334,7 +309,7 @@
             {{/ thanksMessage }}
             {{^ thanksMessage }}
             <h1 class="thanks-message nodisplay">Thank you for taking part in this experiment!</h1>
-            <h3 class="thanks-message nodisplay"> Your completion code is C11KOQ9V. </h3>
+            <h3 class="thanks-message nodisplay"> Your completion code is CDRBZC1F. </h3>
             {{/ thanksMessage }}
             {{# extraMessage }}
             <h2 class="extra-message nodisplay">{{{ extraMessage }}}</h2>

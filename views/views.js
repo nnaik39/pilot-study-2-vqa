@@ -138,8 +138,8 @@ var instruction_screen = {
     name: "instruction",
     title: "Instructions",
     text:
-        "<strong>Online images</strong> can be a useful resource, but there are cases where you <strong>cannot directly see</strong> the image—for instance, if you have a visual impairment or if you’re browsing a speech-enabled website where the site content is narrated.",
-    paragraph2: "In this study, we’re investigating how asking questions might help when you can’t see the image. You’ll see six <strong>image descriptions</strong>, each paired with a type of website where you might see the image. You’ll be asked to <strong> guess why </strong> the image appears on this type of website, and to <strong> ask questions </strong> to understand the image further.",
+        "Imagine that we've built an AI that can understand details about an image. <strong>Online images</strong> can be a useful resource. We want you to stump this smart robot!",
+    paragraph2: "In this study, you’ll see six <strong>images</strong>, and you'll be asked to <strong>write questions</strong> to fool a smart robot.",
     readyText: "Are you ready?",
     buttonText: "Begin experiment",
     // render function renders the view
@@ -213,6 +213,7 @@ var main = {
         }
 
         q1 += " A response of 5-10 words should be sufficient."
+        q2 = "We have built a smart robot. It understands a lot about images. It can recognize and name all the objects, it knows where the objects are, it can recognize the scene (e.g. kitchen, beach), people's expressions and poses, and properties of objects (e.g., color of objects, their texture). Your task is to stump this smart robot! Ask two questions about this scene that this smart robot probably can not answer, but any human can easily answer while looking at the scene in the image."
 
         checkbox = 'There is a grammatical error in the description';
 
